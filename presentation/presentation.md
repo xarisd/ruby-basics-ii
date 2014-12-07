@@ -6,7 +6,7 @@ date: <%= Date.today %>
 theme: serif
 % available transitions: // default/cube/page/concave/zoom/linear/fade/none
 transition: linear
-custom_css: ruby-basics
+custom_css: presentation
 % code-engine: coderay
 
 
@@ -16,26 +16,25 @@ custom_css: ruby-basics
 
 !SLIDE
 ## Who am I?
-
-<p>&nbsp;</p>
 <p>&nbsp;</p>
 <h3 class="fragment">
   Haris Dimitriou (<strong>xarisd</strong>)
 </h3>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
 <p class="fragment">
-  CTO and co-founder @  <a href="http://www.polyptychon.gr">Polyptychon</a> (<a href="http://polyptychon.gr">polyptychon.gr</a>)
+  Ruby developer<span class="fragment">...among other things</span>
 </p>
 <p>&nbsp;</p>
 <p class="fragment">
-  <br>
-  ...just a developer
-  <br>
-  <br>
+  CTO and co-founder @<a href="http://www.polyptychon.gr">Polyptychon</a> (<a href="http://polyptychon.gr">polyptychon.gr</a>)
+</p>
+<p>&nbsp;</p>
+<p class="fragment">
   <a href="http://github.com/xarisd">github.com/xarisd</a>
   <br>
   <a href="http://twitter.com/xarisd">twitter.com/xarisd</a>
+  <br>
+  <a href="http://xarisd.io">xarisd.io</a>
 </p>
 
 
@@ -219,11 +218,12 @@ using <code>=begin</code> and <code>=end</code> pairs
 
 !SLIDE
 ## String interpolation and implicit return values
+<p>&nbsp;</p>
+<p class="fragment">Better explain with an example...</p>
+
 
 !SLIDE
-Better explain with an example...
-
-<pre class="fragment"><code class="ruby">
+<pre><code class="ruby">
 <%= include 'code/basics/04_string_interpolation_and_return_values_a.rb' %>
 </code></pre>
 <p class="fragment small">+ string interpolation</p>
@@ -318,7 +318,7 @@ Better explain with an example...
 
 
 !SLIDE
-## if / unless as <em>expressions</em>
+### if / unless as <em>expressions</em>
 
 <pre><code class="ruby">
 <%= include 'code/control_structures/03_if_unless_expressions_a.rb' %>
@@ -446,10 +446,20 @@ Better explain with an example...
 </code></pre>
 
 !SLIDE
-But in Ruby you normally do it with <strong>blocks and iterators</strong>
-<pre><code class="ruby">
+#### In Ruby you <strong>normally</strong> do <strong>loops</strong> with
+
+<h3 class="fragment"><strong>blocks and iterators</strong></h3>
+
+<pre class="fragment"><code class="ruby">
 <%= include 'code/control_structures/08_each_a.rb' %>
 </code></pre>
+
+<ul>
+  <li class="fragment">No need for counters and initialization</li>
+  <li class="fragment">Which is way nicer to read</li>
+  <li class="fragment">And way nicer to write also!</li>
+</ul>
+
 
 !SLIDE down-close
 
@@ -786,7 +796,7 @@ Attributes the easy way
   <li class="fragment">You can use <code>attr_accessor</code> to create <strong>read/write</strong> attribute methods</li>
   <li class="fragment">You can use <code>attr_reader</code> to create <strong>readonly</strong> attribute methods</li>
   <li class="fragment">You can use <code>attr_writer</code> to create <strong>writeonly</strong> attribute methods</li>
-  <li class="fragment">These <strong>are just class methods</strong></li>
+  <li class="fragment">These <strong>are just class methods</strong> that generate the appropriate getters/setters</li>
 </ul>
 
 
@@ -840,7 +850,7 @@ Method overriding example
 
 
 !SLIDE
-Class methods
+## Class methods
 
 <pre class="fragment"><code class="ruby">
 <%= include 'code/classes/07_class_methods.rb' %>
@@ -848,8 +858,8 @@ Class methods
 
 
 <ul>
-  <li class="fragment">You can define class methods using <code>def self.</code> from inside a class definition</li>
-  <li class="fragment">You can also define class methods from <strong>inside or outside</strong> the class using <code>def ClassName.</code></li>
+  <li class="fragment small">You can define class methods using <code>def self.</code> from inside a class definition</li>
+  <li class="fragment small">You can also define class methods from <strong>inside or outside</strong> the class using <code>def ClassName.</code></li>
 </ul>
 
 
@@ -877,7 +887,7 @@ Modules as utility methods containers
 
 <ul>
   <li class="fragment">Watch out the <code>self.</code> in definitions</li>
-  <li class="fragment">After all these methods are just <strong>module (class) methods</strong></li>
+  <li class="fragment">After all...<span class="fragment">these methods are just <strong>module (class) methods</strong></span></li>
 </ul>
 
 !SLIDE
@@ -969,6 +979,7 @@ A variable can point to any object
 
 <p class="fragment">at <strong>any time</strong></p>
 
+<p class="fragment">because variables are <strong>just pointers</strong></p>
 
 
 
@@ -1030,6 +1041,7 @@ You can **REOPEN** any class to **add** or **rewrite** a method
  <span class="fragment">that were created</span>
  <span class="fragment"><strong>BEFORE</strong></span> <span class="fragment">you opened their class</span>
 </p>
+<p class="fragment">(i.e. the object assigned to the <strong><code>a</code></strong> variable in the code above)</p>
 
 !SLIDE
 ## Because in Ruby
@@ -1074,21 +1086,25 @@ Well <br/>that's another presentation :-)
 
 
 !SLIDE
-### Thank you!
-
+## Thank you!
 <p>&nbsp;</p>
-<div class="fragment">
-  <p>Any Questions?</p>
-  <p>&nbsp;</p>
-  <p>&nbsp;</p>
-  <p>&nbsp;</p>
-  <p class="fragment">
-    <a href="http://polyptychon.gr">polyptychon.gr</a>
-    <br>
-    <a href="http://github.com/xarisd">github.com/xarisd</a>
-    <br>
-    <a href="http://twitter.com/xarisd">twitter.com/xarisd</a>
-  </p>
-
-</div>
+<p class="fragment">Liked the presentation?</p>
+<p>&nbsp;</p>
+<p class="fragment">
+  Source: <a href="http://github.com/xarisd/ruby-basics-ii"> github.com/xarisd/ruby-basics-ii</a>
+</p>
+<p>&nbsp;</p>
+<p>
+<p class="fragment">
+  View it online: <a href="http://xarisd.io/presentations/ruby-basics-ii">xarisd.io/presentations/ruby-basics-ii</a>
+</p>
+<p>&nbsp;</p>
+<p class="fragment">
+  Have something to say?
+</p>
+<p class="fragment">
+  Send me a tweet or direct message: <a href="http://twitter.com/xarisd">@xarisd</a>
+</p>
+<p>&nbsp;</p>
+<p class="fragment">Questions?</p>
 

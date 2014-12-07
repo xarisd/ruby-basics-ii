@@ -25,3 +25,7 @@
   padding-left: 10px;
   padding-right: 10px;
 }
+
+.reveal .small {
+  font-size: 0.8em;
+}

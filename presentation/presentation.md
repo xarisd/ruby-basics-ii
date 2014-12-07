@@ -6,7 +6,7 @@ date: <%= Date.today %>
 theme: serif
 % available transitions: // default/cube/page/concave/zoom/linear/fade/none
 transition: linear
-custom_css: ruby-basics
+custom_css: presentation
 % code-engine: coderay
 
 
@@ -16,26 +16,25 @@ custom_css: ruby-basics
 
 !SLIDE
 ## Who am I?
-
-<p>&nbsp;</p>
 <p>&nbsp;</p>
 <h3 class="fragment">
   Haris Dimitriou (<strong>xarisd</strong>)
 </h3>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
 <p class="fragment">
-  CTO and co-founder @  <a href="http://www.polyptychon.gr">Polyptychon</a> (<a href="http://polyptychon.gr">polyptychon.gr</a>)
+  Ruby developer<span class="fragment">...among other things</span>
 </p>
 <p>&nbsp;</p>
 <p class="fragment">
-  <br>
-  ...just a developer
-  <br>
-  <br>
+  CTO and co-founder @<a href="http://www.polyptychon.gr">Polyptychon</a> (<a href="http://polyptychon.gr">polyptychon.gr</a>)
+</p>
+<p>&nbsp;</p>
+<p class="fragment">
   <a href="http://github.com/xarisd">github.com/xarisd</a>
   <br>
   <a href="http://twitter.com/xarisd">twitter.com/xarisd</a>
+  <br>
+  <a href="http://xarisd.io">xarisd.io</a>
 </p>
 
 
@@ -219,11 +218,12 @@ using <code>=begin</code> and <code>=end</code> pairs
 
 !SLIDE
 ## String interpolation and implicit return values
+<p>&nbsp;</p>
+<p class="fragment">Better explain with an example...</p>
+
 
 !SLIDE
-Better explain with an example...
-
-<pre class="fragment"><code class="ruby">
+<pre><code class="ruby">
 <%= include 'code/basics/04_string_interpolation_and_return_values_a.rb' %>
 </code></pre>
 <p class="fragment small">+ string interpolation</p>
@@ -318,7 +318,7 @@ Better explain with an example...
 
 
 !SLIDE
-## if / unless as <em>expressions</em>
+### if / unless as <em>expressions</em>
 
 <pre><code class="ruby">
 <%= include 'code/control_structures/03_if_unless_expressions_a.rb' %>
@@ -446,10 +446,20 @@ Better explain with an example...
 </code></pre>
 
 !SLIDE
-But in Ruby you normally do it with <strong>blocks and iterators</strong>
-<pre><code class="ruby">
+#### In Ruby you <strong>normally</strong> do <strong>loops</strong> with
+
+<h3 class="fragment"><strong>blocks and iterators</strong></h3>
+
+<pre class="fragment"><code class="ruby">
 <%= include 'code/control_structures/08_each_a.rb' %>
 </code></pre>
+
+<ul>
+  <li class="fragment">No need for counters and initialization</li>
+  <li class="fragment">Which is way nicer to read</li>
+  <li class="fragment">And way nicer to write also!</li>
+</ul>
+
 
 !SLIDE down-close
 
@@ -1074,21 +1084,25 @@ Well <br/>that's another presentation :-)
 
 
 !SLIDE
-### Thank you!
-
+## Thank you!
 <p>&nbsp;</p>
-<div class="fragment">
-  <p>Any Questions?</p>
-  <p>&nbsp;</p>
-  <p>&nbsp;</p>
-  <p>&nbsp;</p>
-  <p class="fragment">
-    <a href="http://polyptychon.gr">polyptychon.gr</a>
-    <br>
-    <a href="http://github.com/xarisd">github.com/xarisd</a>
-    <br>
-    <a href="http://twitter.com/xarisd">twitter.com/xarisd</a>
-  </p>
-
-</div>
+<p class="fragment">Liked the presentation?</p>
+<p>&nbsp;</p>
+<p class="fragment">
+  Source: <a href="http://github.com/xarisd/ruby-basics-ii"> github.com/xarisd/ruby-basics-ii</a>
+</p>
+<p>&nbsp;</p>
+<p>
+<p class="fragment">
+  View it online: <a href="http://xarisd.io/presentations/ruby-basics-ii">xarisd.io/presentations/ruby-basics-ii</a>
+</p>
+<p>&nbsp;</p>
+<p class="fragment">
+  Have something to say?
+</p>
+<p class="fragment">
+  Send me a tweet or direct message: <a href="http://twitter.com/xarisd">@xarisd</a>
+</p>
+<p>&nbsp;</p>
+<p class="fragment">Questions?</p>
 

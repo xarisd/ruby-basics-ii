@@ -796,7 +796,7 @@ Attributes the easy way
   <li class="fragment">You can use <code>attr_accessor</code> to create <strong>read/write</strong> attribute methods</li>
   <li class="fragment">You can use <code>attr_reader</code> to create <strong>readonly</strong> attribute methods</li>
   <li class="fragment">You can use <code>attr_writer</code> to create <strong>writeonly</strong> attribute methods</li>
-  <li class="fragment">These <strong>are just class methods</strong></li>
+  <li class="fragment">These <strong>are just class methods</strong> that generate the appropriate getters/setters</li>
 </ul>
 
 
@@ -850,7 +850,7 @@ Method overriding example
 
 
 !SLIDE
-Class methods
+## Class methods
 
 <pre class="fragment"><code class="ruby">
 <%= include 'code/classes/07_class_methods.rb' %>
@@ -858,8 +858,8 @@ Class methods
 
 
 <ul>
-  <li class="fragment">You can define class methods using <code>def self.</code> from inside a class definition</li>
-  <li class="fragment">You can also define class methods from <strong>inside or outside</strong> the class using <code>def ClassName.</code></li>
+  <li class="fragment small">You can define class methods using <code>def self.</code> from inside a class definition</li>
+  <li class="fragment small">You can also define class methods from <strong>inside or outside</strong> the class using <code>def ClassName.</code></li>
 </ul>
 
 
@@ -887,7 +887,7 @@ Modules as utility methods containers
 
 <ul>
   <li class="fragment">Watch out the <code>self.</code> in definitions</li>
-  <li class="fragment">After all these methods are just <strong>module (class) methods</strong></li>
+  <li class="fragment">After all...<span class="fragment">these methods are just <strong>module (class) methods</strong></span></li>
 </ul>
 
 !SLIDE
@@ -979,6 +979,7 @@ A variable can point to any object
 
 <p class="fragment">at <strong>any time</strong></p>
 
+<p class="fragment">because variables are <strong>just pointers</strong></p>
 
 
 
@@ -1040,6 +1041,7 @@ You can **REOPEN** any class to **add** or **rewrite** a method
  <span class="fragment">that were created</span>
  <span class="fragment"><strong>BEFORE</strong></span> <span class="fragment">you opened their class</span>
 </p>
+<p class="fragment">(i.e. the object assigned to the <strong><code>a</code></strong> variable in the code above)</p>
 
 !SLIDE
 ## Because in Ruby

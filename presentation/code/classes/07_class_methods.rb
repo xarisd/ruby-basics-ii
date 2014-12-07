@@ -17,5 +17,4 @@ end
 
 p1 = Person.new
 p1.say_hello
-
 people_named_george = Person.find_by_name("George")

@@ -1,18 +1,18 @@
 Ruby Basics (version 2.0)
 ==========================
 
-This is a presentation about the Basics of the Ruby langunage.
+This is a presentation about the Basics of the Ruby language.
 
 It is the second version of the presentation, containing code AND slides.
 You can find the first version of the presentation [here](https://github.com/xarisd/ruby-basics) (1st version was done only with examples in a code editor).
 
-You can enjoy it online at <http://xarisd.io/presentations/ruby-basics-ii>.
+You can enjoy it online at <http://xarisd.io/presentations/ruby-basics-ii>
 
 ## About this repository
 
 Here you can find the source of the slides used for the presentation along with the tooling needed to build them.
 
-Presentation is made with [Slide Show (s9) gem](https://github.com/slideshow-s9/slideshow) and [reveal.js HTML Presentation Framework](https://github.com/hakimel/reveal.js).
+Presentation is made with [slideshow (s9) gem](https://github.com/slideshow-s9/slideshow) and [reveal.js HTML Presentation Framework](https://github.com/hakimel/reveal.js).
 
 ## How to build/test the presentation
 
